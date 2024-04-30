@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
             
             case "PlayScene":
                 timerToggle = true;
-                if (Input.GetKeyUp(KeyCode.R))
+                if (Input.GetKeyUp(KeyCode.Escape))
                 {
                     LoadStartScene();
                 }
@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
                 break;
             
             case "EndScene":
-                if (Input.GetKeyUp(KeyCode.R))
+                if (Input.GetKeyUp(KeyCode.Escape))
                 {
                     timerScoreUI.text = "";
                     LoadStartScene();
